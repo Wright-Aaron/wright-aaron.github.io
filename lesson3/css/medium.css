@@ -1,7 +1,6 @@
 @media screen and (min-width:32.5em) {
 
     header, footer {
-        align-items: left;
         text-align: center;
         border-bottom-left-radius: 3rem;
         border-bottom-right-radius: 3rem;
