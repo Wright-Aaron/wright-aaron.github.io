@@ -82,12 +82,20 @@ section {
     box-shadow: 5px 5px 5px rgb(209, 208, 208);
 }
 
+div {
+    margin: .5rem;
+}
+
 section h2 {
     margin-top: .5rem;
 }
 
 p {
     margin: 0.5rem;
+}
+
+img {
+    align-self: center;
 }
 
 #byulink {

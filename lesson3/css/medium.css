@@ -22,6 +22,11 @@
         display: flex;
     }
 
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
     #icon{
         float: left;
     }
