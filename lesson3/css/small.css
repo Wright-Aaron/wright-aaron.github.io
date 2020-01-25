@@ -1,0 +1,98 @@
+body {
+    background-color: #99B8B8;
+    max-width: 1150px;
+    margin: 1.5rem auto;
+}
+
+header, footer {
+    max-width: 1150px;
+    background-color: #1D3E3C;
+    color:white;
+    align-items: center;
+    text-align: center;
+    border-radius: 3rem;
+    margin: .25rem;
+    padding: .5rem;
+}
+
+header {
+    margin-bottom: 0;
+    color: rgb(251, 255, 0);
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+header h1 {
+    margin: .5rem;
+}
+
+header h3 {
+    margin: .5rem;
+    color: white;
+}
+
+nav {
+    max-width: 1100px;
+    text-align: center;
+    background-color: #4F7C72;
+    border-radius: .5rem;
+    margin: 1rem;
+    margin-top: -1rem;
+    box-shadow: 5px 5px 5px rgb(209, 208, 208);
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.75em;
+}
+
+nav a:hover {
+    background-color: #1D3E3C;
+    color: white;
+}
+main {
+    padding: 1rem;
+}
+
+section {
+    color: white;
+    background-color: #275C58;
+    border-radius: .5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(170, 170, 170);
+    box-shadow: 5px 5px 5px rgb(209, 208, 208);
+}
+
+p {
+    margin: 0.5rem;
+}
+
+#byulink {
+    color: white;
+}
+
+#icon {
+    width: 100%;
+    height: auto;
+    max-width: 5em;
+}
+
+#greg, #angie {
+    width: 100%;
+    height: auto;
+    max-width: 10em;
+    box-shadow: 2.5px 2.5px 2.5px rgb(43, 43, 43);
+}
