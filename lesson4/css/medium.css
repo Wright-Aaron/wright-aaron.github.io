@@ -1,0 +1,28 @@
+@media screen and (min-width:32.5em) {
+
+    header, footer {
+        text-align: center;
+    }
+
+    header {
+        font-size: 20px;
+        border: -5px;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    section section{
+        display: flex;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #icon{
+        float: left;
+    }
+}

@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em) {
+    
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navigation li:first-child, .navigation li:nth-child(2) {
+        display: none;
+    }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
