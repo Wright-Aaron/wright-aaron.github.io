@@ -36,11 +36,11 @@ header div {
 
 nav {
     text-align: center;
-    background: #9db8b8; /* Old browsers */
-    background: -moz-linear-gradient(top,  #9db8b8 0%, #4f7c72 100%, #4f7c72 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #9db8b8 0%,#4f7c72 100%,#4f7c72 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #9db8b8 0%,#4f7c72 100%,#4f7c72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9db8b8', endColorstr='#4f7c72',GradientType=0 ); /* IE6-9 */
+    background: #4f7c72; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #4f7c72 0%, #191919 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #4f7c72 0%,#191919 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #4f7c72 0%,#191919 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7c72', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
     margin-top: -1rem;
@@ -71,7 +71,6 @@ nav a:hover {
     background: -webkit-radial-gradient(center, ellipse cover,  #4f7c72 0%,#4f7c72 0%,#9db8b8 100%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center,  #4f7c72 0%,#4f7c72 0%,#9db8b8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7c72', endColorstr='#9db8b8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
     color: white;
 }
 
@@ -93,14 +92,6 @@ nav a.active:hover {
 }
 
 .responsive li {
-    display: block;
-}
-
-.closeinvisible li a {
-    display: none;
-}
-
-.close li a {
     display: block;
 }
 
