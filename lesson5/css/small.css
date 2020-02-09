@@ -127,18 +127,18 @@ div {
     margin: .5rem;
 }
 
-.hero-div{
+.hero-div {
     margin: 10px auto;
     position: relative;
     max-width: 1200px;
 }
 
-.hero-div img{
+.hero-div img {
     width: 100%;
     box-shadow: 5px 5px 5px rgb(209, 208, 208);
 }
 
-.weathersummery{
+.weathersummery {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -154,19 +154,19 @@ div {
     margin-bottom: 2px;
 }
 
-.item1{
+.item1 {
     grid-column: 1 / span 2;
     text-align: center;
     border-bottom: 1px solid white;
     color: white;
   }
-.item2, .item4, .item6, .item8, .item10{
+.item2, .item4, .item6, .item8, .item10 {
     text-align: right;
     color: white;
     margin: 2px;
 }
 
-.item3, .item5, .item7, .item9, .item11{
+.item3, .item5, .item7, .item9, .item11 {
     text-align: left;
     color: white;
     margin: 2px;
@@ -176,7 +176,7 @@ div.item1 h3{
     margin:0;
 }
 
-.forecast, .forecasttitle{
+.forecast, .forecasttitle {
     display: none;
 }
 
@@ -187,7 +187,7 @@ max-width: 1200px;
 background-color: #275C58;
 }
 
-.article img{
+.article img {
 width: 100%;
 margin: 8px;
 }
@@ -198,7 +198,7 @@ margin: 8px;
 }
 
 
-.contact{
+.contact {
     width: 100%;
     background-color: #275C58;
     display: flex;
@@ -208,50 +208,50 @@ margin: 8px;
     justify-content: center;
 }
 
-.map, .info{
+.map, .info {
     flex: 1 1 100%;
 }
 
-.map{
+.map {
     display: none;
 }
 
-.info{
+.info {
     display: grid;
     grid-template-columns: 30px auto;
     align-self: center;
 }
 
 
-.infogrid2 a img{
+.infogrid2 a img {
     width: 15px;
     cursor: pointer;
 }
 
-.infogrid1{
+.infogrid1 {
     grid-column: 1 / span 2;
 }
 
-.infogrid8{
+.infogrid8 {
     grid-column: 1 / span 2;
 }
 
-.info{
+.info {
     width: 100%;    
     flex: 1 1 100%;
 }
 
-.info p{
+.info p {
     margin: 0;
 }
 
-.infogrid1, .infogrid2, .infogrid3, .infogrid4, .infogrid5, .infogrid6, .infogrid7, .infogrid8{
+.infogrid1, .infogrid2, .infogrid3, .infogrid4, .infogrid5, .infogrid6, .infogrid7, .infogrid8 {
     padding: 5px;
     align-self: center;
     margin: 0px;
 }
 
-.infogrid4, .infogrid6{
+.infogrid4, .infogrid6 {
     font-size: 1.2em;
     margin: 0px;
 }
@@ -260,7 +260,7 @@ margin: 8px;
     flex-direction: row;
 }
 
-.socialicons img{
+.socialicons img {
     width: 18px;
     padding: 2px;
 }

@@ -15,7 +15,7 @@
     .weathersum {
         font-size: 1.0em;
     }
-    section section{
+    section section {
         display: flex;
     }
 
@@ -23,15 +23,15 @@
         display: flex;
         flex-direction: column;
     }
-
-    .forecasttitle{
+ 
+    .forecasttitle {
         display: block;
         margin: 0;
         padding: 5px;
         text-align: center;
     }
 
-    .forecast{
+    .forecast {
         min-width: 35rem;
         max-width: 800px;
         display: flex;
@@ -41,43 +41,43 @@
         margin: 5px auto 10px auto;
     }
 
-    .forecastitem{
+    .forecast-item {
         flex: 1 1 100%;
         text-align: center;
         border: 3px solid rgb(28, 65, 61);
         box-shadow: 2.5px 2.5px 2.5px rgb(209, 208, 208);
     }
 
-    .day{
+    .day {
     }
 
-    .weathericon img{
+    .weathericon img {
       height: 60px;
       padding: 8px;
     }
 
-    .article{
+    .article {
         margin-top: 10px;
         padding: 1.5rem;
     }
-    .article img{
+    .article img {
         width: 40%;
         float: right;
         left: 10px;
         bottom: 10px;
         }
-    .map{
+    .map {
         display: block;
         padding: 2.5%;
     }
 
-    .map iframe{
+    .map iframe {
         width: 95%;
         height: auto;
         border: 0;
     }
 
-    #icon{
+    #icon {
         float: left;
     }
 }
