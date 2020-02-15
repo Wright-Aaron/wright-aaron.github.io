@@ -5,6 +5,7 @@ body {
 #message {
     margin: 0px;
     display: block;
+    text-align: center;
 }
 
 header, footer {
