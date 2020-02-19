@@ -1,0 +1,22 @@
+header {
+    text-align: center;
+    border-bottom: double;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+img[data-src] {    
+    filter: blur(0.2em);
+}
+
+img {
+    border-style: groove;
+    border-width: 3px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
