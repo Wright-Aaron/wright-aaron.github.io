@@ -228,6 +228,22 @@ div.item1 h3{
     align-self: center;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gallery picture {
+    margin: 10px;
+    padding: 7px;
+    background-color: #275C58;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(209, 208, 208);
+}
+
+.gallery img {
+    width: 100%;    
+}
 
 .infogrid2 a img {
     width: 15px;
@@ -288,6 +304,12 @@ footer {
 
 img {
     align-self: center;
+    filter: blur(0em);
+    transition: filter 1.5s;
+}
+
+img[data-src] {    
+    filter: blur(0.2em);
 }
 
 #byulink {

@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>CIT 230 Preston</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div id="message" class="hide">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday in the city park.</p>
+    </div>
+
+    <header>
+        <img src="images/weathericon.png" alt="Site icon" id="icon">
+        <div>
+            <h1 id="myName">Weather Qs</h1>
+            <h3 id="slogan">All the answers for your questions</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" onclick="toggleMenu()">&#10006;</a></li>
+            <li><a href="https://wright-aaron.github.io/">Home</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html" class="active">Gallery</a></li>
+        </ul>
+        <script src="js/responsivebutton.js"></script>
+    </nav>
+
+    <main>
+        <div class="gallery">
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/foggy600.jpg" alt="foggy weather image">
+                <figcaption>Foggy Weather</figcaption>
+            </picture>
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/tornadolightning600.jpg" alt="Tornado image">
+                <figcaption>Tornado and lightning</figcaption>
+            </picture>
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/cloudy600.jpg" alt="cloudy day image">
+                <figcaption>Cloudy day</figcaption>
+            </picture>
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/snow600.jpg" alt="snow image">
+                <figcaption>Snowy day</figcaption>
+            </picture>
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/lightning600.jpg" alt="lighning image">
+                <figcaption>Lighting storm</figcaption>
+            </picture>
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/geyser600.jpg" alt="geyser image">
+                <figcaption>Soda Springs geyser</figcaption>
+            </picture>
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/sunset600.jpg" alt="Sunset image">
+                <figcaption>Beautiful sunset</figcaption>
+            </picture>
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/icyroads600.jpg" alt="Icy roads image">
+                <figcaption>Icy roads</figcaption>
+            </picture>
+            <picture>
+                <img src="images/galleryplaceholder.jpg" data-src="images/clear600.jpg" alt="clear skies image">
+                <figcaption>clear skies</figcaption>
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="currentYear"></span> | Aaron Wright | Arkansas | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a>
+        <br /> Last Updated: <span id="lastUpdated"></span>
+        <script src="js/time.js"></script>
+    </footer>
+    <script src="js/alert.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+            families: ['Poppins', 'Cormorant+SC']
+        }
+      });
+    </script>
+</body>
+
+
+</html>

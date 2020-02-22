@@ -77,6 +77,10 @@
         border: 0;
     }
 
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
     #icon {
         float: left;
     }
