@@ -233,7 +233,7 @@ div.item1 h3{
     grid-template-columns: 1fr;
 }
 
-.gallery picture {
+.gallery figure {
     margin: 10px;
     padding: 7px;
     background-color: #275C58;
