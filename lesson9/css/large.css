@@ -33,4 +33,19 @@
     .gallery figure:hover {
         box-shadow: 0px 0px 25px 5px rgb(251, 255, 0);
     }
+
+    div.towns {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div.towns div {
+        display: block;
+        padding: 0;
+    }
+
+    div.towns div img {
+        max-width: 100%;
+    }
 }

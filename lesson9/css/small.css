@@ -381,3 +381,46 @@ form input.submitbutton:hover {
 #ratingslider {
     padding: 0px;
 }
+
+div {
+    margin: 0;
+}
+div.towns {
+    display: grid;
+}
+div.towns div {
+    background-color: #275C58;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(28, 65, 61);
+    
+}
+
+div.towns div img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: .5rem;
+}
+
+div div section {
+    box-shadow: 0px 0px 0px;
+    border: 0px;
+    padding: 8px;
+}
+
+.welcome {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #275C58;
+    border: 1px solid rgb(28, 65, 61);
+    padding: 8px 5px 8px 5px;
+    opacity: .8;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 25%;
+    min-width: 160px;
+    font-size: .9em;
+    margin-bottom: 2px;
+}
