@@ -81,6 +81,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .welcome {
+        max-width: 25%;
+    }
+
     #icon {
         float: left;
     }
@@ -107,7 +111,7 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     div.towns div img {
         margin: 0;
         max-width: 50%;
