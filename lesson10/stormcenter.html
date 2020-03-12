@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160150981-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160150981-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>CIT 230 Preston</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div id="message" class="hide">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday in the city park.</p>
+    </div>
+
+    <header>
+        <img src="images/weathericon.png" alt="Site icon" id="icon">
+        <div>
+            <h1 id="myName">Weather Qs</h1>
+            <h3 id="slogan">All the answers for your questions</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" onclick="toggleMenu()">&#10006;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+        <script src="js/responsivebutton.js"></script>
+    </nav>
+
+    <main>
+        <h2>Storm Center - Report A Storm</h2>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Reporter's Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullname"  pattern="(.*[A-Za-z]){5,}" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder ="email@email.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" required></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Date of Storm <input type="date" name="completeDate"></label>
+                <label class="top">Storm Type <input list="stormList" name="storms"></label>
+                    <datalist id="stormList">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                <label class="top slider" id="rating">Storm Severity <input type="range"  value="5" min="1" max="10" step="1" id="ratingslider" 
+                    oninput="adjustRating(this.value)" 
+                    onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                </label>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="">Select Region </option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>Are you in danger?</div>
+                    <label class="radio"><input type="radio" name="status" value="yes"> Yes</label>
+                    <label class="radio"><input type="radio" name="status" value="no"> No</label>
+                    <label class="radio"><input type="radio" name="status" value="maybe"> Maybe</label>
+                <label class="top">Additional information or comments: 
+                    <textarea name="additionalInfo" placeholder="Enter Comments Here . . . " rows="5" cols="50"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Report Storm" class="submitbutton">
+        </form>
+    </main>
+
+    <footer>
+        &copy; <span id="currentYear"></span> | Aaron Wright | Arkansas | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a>
+        <br /> Last Updated: <span id="lastUpdated"></span>
+        <script src="js/time.js"></script>
+    </footer>
+    <script src="js/adjustrating.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+            families: ['Poppins', 'Cormorant+SC']
+        }
+      });
+    </script>
+</body>
+
+</html>

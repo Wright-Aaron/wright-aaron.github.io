@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160150981-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160150981-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>CIT 230 Preston</title>
+    <link rel="shortcut icon" href="favicon.ico">    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div id="message" class="hide">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday in the city park.</p>
+    </div>
+
+    <header>
+        <img src="images/weathericon.png" alt="Site icon" id="icon">
+        <div>
+            <h1 id="myName">Weather Qs</h1>
+            <h3 id="slogan">All the answers for your questions</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" onclick="toggleMenu()">&#10006;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-8.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+        <script src="js/responsivebutton.js"></script>
+    </nav>
+
+    <main>
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+        <hr>
+        <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="apiicon"></p>
+    </main>
+
+    <footer>
+        &copy; <span id="currentYear"></span> | Aaron Wright | Arkansas | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a>
+        <br /> Last Updated: <span id="lastUpdated"></span>
+        <script src="js/time.js"></script>
+    </footer>
+    <script src="js/alert.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+            families: ['Poppins', 'Cormorant+SC']
+        }
+      });
+    </script>
+    <script src="js/weatherapi.js"></script>
+</body>
+
+
+</html>
