@@ -1,4 +1,4 @@
-const apiURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=e13503e22a461e9043203aaf017f9f1d';
+const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=e13503e22a461e9043203aaf017f9f1d';
 var now = new Date();
 var dayOfWeek = now.getDay();
 
@@ -22,7 +22,7 @@ fetch(apiURL)
     console.log(temp);
     console.log(windspeed);
 
-    if (temp <= 50 && windspeed >= 3) {
+    if (temp && windspeed) {
         const windchill = (35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, 0.16)) + (0.4275 * temp * Math.pow(windspeed, 0.16))).toFixed(2);
         document.getElementById('windchill').textContent = windchill;
     } else {
