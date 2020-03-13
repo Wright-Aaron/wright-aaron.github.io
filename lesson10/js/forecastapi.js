@@ -13,18 +13,18 @@ fetch(apiURL)
 
     currentCondition.textContent = jsObject.list[0].weather[0].main;
     console.log(currentCondition);
-    currentTemp.textContent = jsObject.list[0].main.temp;
-    currentHumidity.textContent = jsObject.list[0].main.humidity;
-    currentWindspeed.textContent = jsObject.list[0].wind.speed;
+    currentTemp.textContent = Math.round(jsObject.list[0].main.temp);
+    currentHumidity.textContent = Math.round(jsObject.list[0].main.humidity);
+    currentWindspeed.textContent = Math.round(jsObject.list[0].wind.speed);
 
     const temp = jsObject.list[0].main.temp;
     const windspeed = jsObject.list[0].wind.speed;
     console.log(temp);
     console.log(windspeed);
 
-    if (temp && windspeed) {
+    if (temp <= 50 && windspeed >= 3) {
         const windchill = (35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, 0.16)) + (0.4275 * temp * Math.pow(windspeed, 0.16))).toFixed(2);
-        document.getElementById('windchill').textContent = windchill;
+        document.getElementById('windchill').textContent = Math.round(windchill);
     } else {
         const windchill = ('N/A');
         document.getElementById('windchill').textContent = windchill;
@@ -34,7 +34,7 @@ fetch(apiURL)
     console.log(fivedayforecast);
 
     for(let i=0; i<fivedayforecast.length; i++) {
-        document.getElementById('forecast'+(i+1)).textContent = fivedayforecast[i].main.temp;
+        document.getElementById('forecast'+(i+1)).textContent = Math.round(fivedayforecast[i].main.temp);
 
         const imagesrc = 'https://openweathermap.org/img/w/' + fivedayforecast[i].weather[0].icon + '.png';
         console.log(imagesrc);
