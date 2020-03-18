@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160150981-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160150981-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>CIT 230 Preston</title>
+    <link rel="shortcut icon" href="favicon.ico">    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div id="message" class="hide">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday in the city park.</p>
+    </div>
+
+    <header>
+        <img src="images/weathericon.png" alt="Site icon" id="icon">
+        <div>
+            <h1 id="myName">Weather Qs</h1>
+            <h3 id="slogan">All the answers for your questions</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" onclick="toggleMenu()">&#10006;</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Welcome</h1>
+        <div class="hero-div">
+            <picture class="heroimg">
+                <source media="(max-width: 32.5em)" srcset="images/hhero400.jpg">
+                <source media="(max-width: 60em)" srcset="images/hhero800.jpg">
+                <img src="images/hhero1200.jpg" alt="Hero Image">
+            </picture>
+            <section class="welcome">
+                <p>Welcome to Weather Qs! We provide the most up to date information on the weather in southwest Idaho.
+                    If you have questions about the weather, we have the answers.
+                </p>
+            </section>
+        </div>
+
+        <div class="towns"></div>
+
+        <section class="contact">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72630212529!2d-111.915430347904!3d42.09980528581252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1581107612685!5m2!1sen!2sus"></iframe>
+            </div>
+            <div class="info">
+                <div class="infogrid1">
+                    <h3>Weather Qs idaho</h3>
+                </div>
+                <div class="infogrid2">
+                    <a href="https://goo.gl/maps/v2Z23pshfjKaZ5rG6">
+                        <img src="images/locationpin.png" alt="Location Pin"></a>
+                </div>
+                <div class="infogrid3">
+                    <p>105 E 140 S</p>
+                    <p>Preston, Idaho 83263</p>
+                </div>
+                <div class="infogrid4">
+                    &#9990;
+                </div>
+                <div class="infogrid5">
+                    <p>(999) 999-9999</p>
+                </div>
+                <div class="infogrid6">
+                    &#9993;
+                </div>
+                <div class="infogrid7">
+                    <p> info@weatherqs.com</p>
+                </div>
+                <div class="infogrid8">
+                    <div class="socialicons">
+                        <img src="images/facebook.png" alt="facebook">
+                        <img src="images/pintrest.png" alt="pinterest">
+                        <img src="images/twitter.png" alt="twitter">
+                        <img src="images/whatsapp.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="currentYear"></span> | Aaron Wright | Arkansas | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a>
+        <br /> Last Updated: <span id="lastUpdated"></span>
+        <script src="js/time.js"></script>
+    </footer>
+
+    <script src="js/alert.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+            families: ['Poppins', 'Cormorant+SC']
+        }
+      });
+    </script>
+    <script src="js/responsivebutton.js"></script>
+    <script src="js/jsonhome.js"></script>
+
+</body>
+
+
+</html>
