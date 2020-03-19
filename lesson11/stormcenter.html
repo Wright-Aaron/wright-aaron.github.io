@@ -14,7 +14,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>CIT 230 Preston</title>
+    <title>Weather Qs Storm Center</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -41,8 +41,8 @@
             <li><a href="#" onclick="toggleMenu()">&#10006;</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html" class="active">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -90,7 +90,7 @@
                     <label class="radio"><input type="radio" name="status" value="yes"> Yes</label>
                     <label class="radio"><input type="radio" name="status" value="no"> No</label>
                     <label class="radio"><input type="radio" name="status" value="maybe"> Maybe</label>
-                <label class="top">Additional information or comments: 
+                    <label class="top">Additional information or comments: 
                     <textarea name="additionalInfo" placeholder="Enter Comments Here . . . " rows="5" cols="50"></textarea></label>
             </fieldset>
             <input type="submit" value="Report Storm" class="submitbutton">
@@ -101,18 +101,9 @@
         &copy; <span id="currentYear"></span> | Aaron Wright | Arkansas | <a href="https://www.byui.edu/online"
             id="byulink">BYUI Online Learning</a>
         <br /> Last Updated: <span id="lastUpdated"></span>
-        <script src="js/time.js"></script>
     </footer>
-    <script src="js/adjustrating.js"></script>
-    <script src="js/alert.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-            families: ['Poppins', 'Cormorant+SC']
-        }
-      });
-    </script>
+    <script src="js/stormcenter.js"></script>
 </body>
 
 </html>
