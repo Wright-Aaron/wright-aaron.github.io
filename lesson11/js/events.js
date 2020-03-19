@@ -19,7 +19,7 @@ fetch(requestURL)
         let event3 = document.createElement('p');
         let event4 = document.createElement('p');
 
-        h2.textContent = "Preston Upcoming Events";
+        h2.textContent = "Upcoming Events";
         event1.textContent = towns[i].events[0];
         event2.textContent = towns[i].events[1];
         event3.textContent = towns[i].events[2];
