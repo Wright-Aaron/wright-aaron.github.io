@@ -14,12 +14,11 @@ fetch(requestURL)
         let townsDiv = document.createElement('div');
         let card = document.createElement('section');
         
-
         let h2 = document.createElement('h2');
         let h3 = document.createElement('h3');
-        let year = document.createElement('p')
-        let pop = document.createElement('p')
-        let rain = document.createElement('p')
+        let year = document.createElement('p');
+        let pop = document.createElement('p');
+        let rain = document.createElement('p');
         let image = document.createElement('img');
 
         h2.textContent = towns[i].name;
