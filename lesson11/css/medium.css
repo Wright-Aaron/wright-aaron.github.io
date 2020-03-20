@@ -119,8 +119,8 @@
 
     .events {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        bottom: 20px;
+        left: 20px;
         background: #275C58;
         border: 1px solid rgb(28, 65, 61);
         padding: 8px 5px 8px 5px;
