@@ -122,29 +122,6 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    const currentCondition = document.querySelector('#condition');
-    const currentTemp = document.querySelector('#temp');
-    const currentHumidity = document.querySelector('#humidity');
-    const currentWindspeed = document.querySelector('#windspeed');
-
-    currentCondition.textContent = jsObject.list[0].weather[0].main;
-    console.log(currentCondition);
-    currentTemp.textContent = Math.round(jsObject.list[0].main.temp);
-    currentHumidity.textContent = Math.round(jsObject.list[0].main.humidity);
-    currentWindspeed.textContent = Math.round(jsObject.list[0].wind.speed);
-
-    const temp = jsObject.list[0].main.temp;
-    const windspeed = jsObject.list[0].wind.speed;
-    console.log(temp);
-    console.log(windspeed);
-
-    if (temp <= 50 && windspeed >= 3) {
-        const windchill = (35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, 0.16)) + (0.4275 * temp * Math.pow(windspeed, 0.16))).toFixed(2);
-        document.getElementById('windchill').textContent = Math.round(windchill);
-    } else {
-        const windchill = ('N/A');
-        document.getElementById('windchill').textContent = windchill;
-    }
 
     const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
     console.log(fivedayforecast);
@@ -211,3 +188,34 @@ fetch(apiURL)
             break;
     }
 });
+
+const apiURL2 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=e13503e22a461e9043203aaf017f9f1d';
+
+fetch(apiURL2)
+  .then((response) => response.json())
+  .then((jsObject2) => {
+    console.log(jsObject2);
+    const currentCondition = document.querySelector('#condition');
+    const currentTemp = document.querySelector('#temp');
+    const currentHumidity = document.querySelector('#humidity');
+    const currentWindspeed = document.querySelector('#windspeed');
+
+    currentCondition.textContent = jsObject2.weather[0].main;
+    console.log(currentCondition);
+    currentTemp.textContent = Math.round(jsObject2.main.temp);
+    currentHumidity.textContent = Math.round(jsObject2.main.humidity);
+    currentWindspeed.textContent = Math.round(jsObject2.wind.speed);
+
+    const temp = jsObject2.main.temp;
+    const windspeed = jsObject2.wind.speed;
+    console.log(temp);
+    console.log(windspeed);
+
+    if (temp <= 50 && windspeed >= 3) {
+        const windchill = (35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, 0.16)) + (0.4275 * temp * Math.pow(windspeed, 0.16))).toFixed(2);
+        document.getElementById('windchill').textContent = Math.round(windchill);
+    } else {
+        const windchill = ('N/A');
+        document.getElementById('windchill').textContent = windchill;
+    }
+  });
