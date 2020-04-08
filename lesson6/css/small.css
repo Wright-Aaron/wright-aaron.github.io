@@ -34,7 +34,7 @@ header h3 {
     color: white;
 }
 
-header div {
+header section {
     display: flex;
     flex-direction: column;
     text-align: center;

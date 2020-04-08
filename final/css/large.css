@@ -1,0 +1,28 @@
+@media only screen and (min-width: 60em) {
+    
+    nav {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#555d7f+0,9cb3cb+11,a4a4a5+50,9cb3cb+87,555d7f+100 */
+        background: rgb(85,93,127); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(85,93,127,1) 0%, rgba(156,179,203,1) 11%, rgba(164,164,165,1) 50%, rgba(156,179,203,1) 87%, rgba(85,93,127,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(85,93,127,1) 0%,rgba(156,179,203,1) 11%,rgba(164,164,165,1) 50%,rgba(156,179,203,1) 87%,rgba(85,93,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(85,93,127,1) 0%,rgba(156,179,203,1) 11%,rgba(164,164,165,1) 50%,rgba(156,179,203,1) 87%,rgba(85,93,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555d7f', endColorstr='#555d7f',GradientType=0 ); /* IE6-9 */
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navigation li:first-child, .navigation li:nth-child(2) {
+        display: none;
+    }
+    
+    .weathersum {
+        font-size: 1.2em;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
