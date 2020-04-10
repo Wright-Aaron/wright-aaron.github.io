@@ -8,12 +8,12 @@
         font-size: 20px;
     }
 
-    nav ul {
-        display: block;
+    header h1 {
+        max-width: none;
     }
 
-    .weathersum {
-        font-size: 1.0em;
+    nav ul {
+        display: block;
     }
     section section {
         display: flex;
@@ -23,61 +23,47 @@
         display: flex;
         flex-direction: column;
     }
- 
-    .forecasttitle {
+
+    .weathersummery {
+        font-size: 25rem;
+        padding: 5px 5px 5px 5px;
+        opacity: .8;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+        min-width: 160px;
+        font-size: .9em;
+        opacity: .8;
+        background: #4e4932;
+        border: 1px solid rgb(28, 65, 61);
+        box-shadow: 5px 5px 5px rgb(209, 208, 208);
+        color: white;
+    }
+    
+    .weathersummery div {
         display: block;
-        margin: 0;
-        padding: 5px;
+        font-size: medium;
+    }
+    
+    .item1 {
+        grid-column: 1 / span 10;
         text-align: center;
+        border-bottom: 1px solid white;
+        color: white;
     }
-
-    .forecast {
-        min-width: 35rem;
-        max-width: 800px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 5px auto 10px auto;
+    
+    .item2, .item4, .item6, .item8, .item10 {
+        text-align: right;
+        color: white;
+        margin: 2px;
     }
-
-    .forecast-item {
-        flex: 1 1 100%;
-        text-align: center;
-        border: 3px solid rgb(28, 65, 61);
-        box-shadow: 2.5px 2.5px 2.5px rgb(209, 208, 208);
+    
+    .item3, .item5, .item7, .item9, .item11 {
+        text-align: left;
+        color: white;
+        margin: 2px;
     }
-
-    .day {
-    }
-
-    .weathericon img {
-      height: 60px;
-      padding: 8px;
-    }
-
-    .article {
-        margin-top: 10px;
-        padding: 1.5rem;
-    }
-    .article img {
-        width: 40%;
-        float: right;
-        left: 10px;
-        bottom: 10px;
-        }
-    .map {
-        display: block;
-        padding: 2.5%;
-    }
-
-    .map iframe {
-        width: 95%;
-        height: auto;
-        border: 0;
-    }
-
-    #icon {
-        float: left;
+    
+    div.item1 h3{
+        margin:0;
     }
 }

@@ -24,6 +24,8 @@
 
     <nav>
         <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" onclick="toggleMenu()">&#10006;</a></li>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="tips.html">Growth/Tips</a></li>
             <li><a href="struggles.html">Struggles</a></li>
@@ -32,9 +34,25 @@
     </nav>
 
     <main>
-        <div>
+        <section class="weathersummery">
+            <div class="item1">
+                <h3>Weather Summary</h3>
+            </div>
+            <div class="item2">Currently:&nbsp;&nbsp;</div>
+            <div class="item3"><span id="condition"></span></div>
+            <div class="item4">Tempurature:&nbsp;&nbsp;</div>
+            <div class="item5"><span id="temp"></span>&#8457;</div>
+            <div class="item6">Wind Chill:&nbsp;&nbsp;</div>
+            <div class="item7"><span id="windchill"></span>&#8457;</div>
+            <div class="item8">Humidity:&nbsp;&nbsp;</div>
+            <div class="item9"><span id="humidity"></span>%</div>
+            <div class="item10">Wind Speed:&nbsp;&nbsp;</div>
+            <div class="item11"><span id="windspeed"></span> mph</div>
+        </section>
+        <div class="main">
             <h2>Welcome</h2>
-            <p>Welcome to my journal report for CIT360 (object-oriented development. ) This is the accumulation of the many lessons that I have learned on my journey through this course. Here, I hope to be able to share with you a number of things, including:<br>           
+            <p>Welcome to my journal report for CIT360 (object-oriented development. ) This is the accumulation of the many lessons that I have learned on my journey through this course. Here, I hope to be able to share with you a number of things, including:<br>
+                <br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>          
         </div>
     </main>
 
@@ -45,5 +63,11 @@
     </footer>
     <script src="js/scripting.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({
+        google: {
+            families: ['Condiment', 'Playfair Display', 'PT Serif']
+        }
+      });
+    </script>
 </body>
 </html>

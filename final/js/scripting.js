@@ -1,24 +1,7 @@
-// Web Font
-WebFont.load({
-    google: {
-        families: ['Condiment', 'Playfair Display', 'PT Serif']
-    }
-  });
-  
-  // Responsive Button
+   // Responsive Button
   function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
   }
-  
-  // Alert
-  var now = new Date();
-  var dayOfWeek = now.getDay();
-  console.log(dayOfWeek);
-  if (dayOfWeek != 5) {
-      document.getElementById("message").style.display = "none";
-  } else {
-      document.getElementById("message").style.display = "block";
-  } 
   
   // Time
   try {
@@ -64,55 +47,35 @@ WebFont.load({
   
   images.forEach(image => {
       imgObserver.observe(image);
-  })
-  
-  // Card generator
-  const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
-  
-  fetch(requestURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsonObject) {
-      console.table(jsonObject);
-      const towns = jsonObject['towns'];
-      
-  
-      for (let i = 0; i < towns.length; i++ ) {
-          if (towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
-          let townsDiv = document.createElement('div');
-          let card = document.createElement('section');
-          
-          let h2 = document.createElement('h2');
-          let h3 = document.createElement('h3');
-          let year = document.createElement('p');
-          let pop = document.createElement('p');
-          let rain = document.createElement('p');
-          let image = document.createElement('img');
-  
-          h2.textContent = towns[i].name;
-          h3.textContent = towns[i].motto;
-          year.textContent = "Year Founded: " + towns[i].yearFounded;
-          pop.textContent = "Population: " + towns[i].currentPopulation;
-          rain.textContent = "Annual Rainfall: " + towns[i].averageRainfall;
-          image.setAttribute('src', "images/" + towns[i].photo);
-          image.setAttribute('alt', towns[i].name);
-  
-          card.appendChild(h2);
-          card.appendChild(h3);
-          card.appendChild(year);
-          card.appendChild(pop);
-          card.appendChild(rain);
-          
-          townsDiv.appendChild(card);
-          townsDiv.appendChild(image);
-        
-  
-          document.querySelector('div.towns').appendChild(townsDiv);
-          
-      }
-          else {
-              continue;
-          }
+})
+
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=e13503e22a461e9043203aaf017f9f1d';
+
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject2) => {
+    console.log(jsObject2);
+    const currentCondition = document.querySelector('#condition');
+    const currentTemp = document.querySelector('#temp');
+    const currentHumidity = document.querySelector('#humidity');
+    const currentWindspeed = document.querySelector('#windspeed');
+
+    currentCondition.textContent = jsObject2.weather[0].main;
+    console.log(currentCondition);
+    currentTemp.textContent = Math.round(jsObject2.main.temp);
+    currentHumidity.textContent = Math.round(jsObject2.main.humidity);
+    currentWindspeed.textContent = Math.round(jsObject2.wind.speed);
+
+    const temp = jsObject2.main.temp;
+    const windspeed = jsObject2.wind.speed;
+    console.log(temp);
+    console.log(windspeed);
+
+    if (temp <= 50 && windspeed >= 3) {
+        const windchill = (35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, 0.16)) + (0.4275 * temp * Math.pow(windspeed, 0.16))).toFixed(2);
+        document.getElementById('windchill').textContent = Math.round(windchill);
+    } else {
+        const windchill = ('N/A');
+        document.getElementById('windchill').textContent = windchill;
     }
-});
+  });
